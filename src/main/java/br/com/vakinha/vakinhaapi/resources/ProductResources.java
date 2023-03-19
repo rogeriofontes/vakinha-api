@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/api/v1/products")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProductResources {
 
     @Autowired

@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/api/v1/orders")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class OrderResources {
 
     @Autowired
@@ -30,12 +31,12 @@ public class OrderResources {
             return ResponseEntity.noContent().build();
         } */
 
-        OrderPixDTO orderPixDTO = new OrderPixDTO.OrderPixDTOBuilder("3830ce06-8c70-11ec-a8a3-0242ac120002")
+        /*OrderPixDTO orderPixDTO = new OrderPixDTO.OrderPixDTOBuilder("3830ce06-8c70-11ec-a8a3-0242ac120002")
                 .totalValue(30)
                 .image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTasvi4i7sEQvaC3yZtDoL8P72P38Nhwy7A-VkFGHwvdGj2BL2UMCnrheBJdo2C7IEJPk&usqp=CAU")
-                .build();
+                .build();*/
 
-        return ResponseEntity.ok(orderPixDTO);
+        return ResponseEntity.noContent().build();
     }
 
     @GetMapping

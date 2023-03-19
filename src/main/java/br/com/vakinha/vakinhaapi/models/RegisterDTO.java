@@ -10,8 +10,11 @@ import java.io.Serializable;
 @EqualsAndHashCode
 @ToString
 @Data
-public class LoginDTO implements Serializable {
+public class RegisterDTO implements Serializable {
+
+    private String name;
     private String email;
     private String password;
+
 }
 
